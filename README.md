@@ -1,5 +1,12 @@
+# Problem Statement
+
+In critical situations, many individuals face challenges in accessing hospitals due to financial constraints, lack of proximity, or emergencies that require immediate attention. This often results in delayed or missed diagnoses, leading to severe health risks and complications.  
+
+Our application addresses this issue by providing a quick, accessible, and user-friendly platform for preliminary diagnosis and guidance. It offers recommendations on potential medical conditions, appropriate medications, and their correct usage, empowering users to make informed decisions in emergencies or when professional medical assistance is unavailable.
+
 # Build a Medical RAG App using BioMistral, Qdrant, and Llama.cpp
 This is a RAG implementation using Open Source stack. BioMistral 7B has been used to build this app along with PubMedBert as an embedding model, Qdrant as a self hosted Vector DB, and Langchain &amp; Llama CPP as an orchestration frameworks.
+
 
 ## Description & Key Features:
 - Build a cutting-edge Medical Retrieval Augmented Generation (RAG) Application using a suite of powerful technologies tailored for the medical domain.
@@ -16,15 +23,125 @@ This is a RAG implementation using Open Source stack. BioMistral 7B has been use
 
  ## Installation
 
+# Medical RAG Application: Installation Guide
 
- ## Contributors
+This guide provides comprehensive steps to set up the Medical Retrieval-Augmented Generation (RAG) application, including downloading, installing dependencies, running components, and troubleshooting.
+
+---
+
+## Prerequisites
+
+Ensure the following tools are installed:
+
+- Python: Version 3.8 or higher
+- Docker: Including Docker Compose
+- Node.js: Along with npm (for frontend setup, if applicable)
+- Git: To clone the repository
+- Internet Connection: For downloading models and dependencies
+
+---
+
+## Installation Steps
+
+### 1. Clone the Repository
+Clone the project repository to your local machine. Navigate into the repository directory after cloning.
+
+---
+
+### 2. Set Up Python Environment
+1. Create a Python virtual environment.
+2. Activate the environment.
+3. Install the project dependencies using the provided requirements.txt file.
+
+---
+
+### 3. Set Up and Run Qdrant
+1. Ensure Docker is running on your machine.
+2. Use Docker Compose to pull and start the Qdrant container.
+3. Verify the Qdrant server is accessible at the configured URL (default: http://localhost:6333).
+
+---
+
+### 4. Download Required Models
+1. Obtain the BioMistral 7B language model.
+2. Download PubMedBERT Embeddings for document vectorization.
+3. Place the models in the appropriate directories as specified in the configuration file.
+
+---
+
+### 5. Run the Backend
+1. Start the FastAPI server using a command-line tool.
+2. The server will run locally, typically accessible at http://localhost:8000.
+
+---
+
+### 6. Set Up Frontend (Optional)
+If your application includes a frontend interface:
+
+1. Navigate to the frontend directory.
+2. Install required Node.js dependencies using npm.
+3. Build the frontend application.
+4. Start the frontend server to serve the UI.
+
+---
+
+### 7. Initial Data Ingestion
+1. Prepare your documents (e.g., PDF files) in the data/ directory.
+2. Load and split documents into smaller chunks for processing.
+3. Store document embeddings in the Qdrant vector database.
+
+---
+
+## Accessing the Application
+
+1. Open your browser and go to http://localhost:8000 for the backend.
+2. If the frontend is configured, access it at the URL where the server is hosted.
+
+---
+
+## Troubleshooting
+
+### Docker Issues
+- Ensure Docker Desktop is running and properly configured.
+- Restart Docker if containers fail to start.
+
+### Dependency Errors
+- Ensure Python is the correct version (3.8 or higher).
+- Re-run pip install -r requirements.txt if some packages failed to install.
+
+### Model Loading Issues
+- Verify that the downloaded models are placed in the correct directories.
+- Check paths in the configuration file for accuracy.
+
+### Qdrant Issues
+- Confirm Qdrant is running on the specified port (6333).
+- Use the Qdrant client to test the connection.
+
+---
+
+## Application Overview
+
+### Backend
+- The backend uses FastAPI to handle API requests and integrates Qdrant for vector-based context retrieval.
+- BioMistral is employed for answering questions based on retrieved context.
+
+### Frontend
+- Optional UI that allows users to interact with the system easily.
+- Built with Node.js and served via a local server.
+
+### Qdrant Vector Database
+- Stores embeddings for documents and provides fast, scalable retrieval of relevant context.
+
+Your Medical RAG application should now be installed and ready to use!
+
+## Contributors
 
     We would like to thank the following people for contributing to this project:
 
-  - **[Kota Prasad](https://github.com/johndoe)** - Initial project setup
-  - **[Semen](https://github.com/janesmith)** - Documentation and bug fixes
-  - **[PKMKB](https://github.com/alexjohnson)** - Feature development and code review
-  - **[Tanmayi](https://github.com/alexjohnson)** - Feature development and code review
+  - [Kota Prasad](https://github.com/kotaprasad15) - Initial project setup
+  - [Sriman](https://github.com/Sriman1210) - Documentation and bug fixes
+  - [Raaghavan](https://github.com/msraaghavan) - Feature development and code review
+  - [Tanmayi](https://github.com/Madana-Tanmayi) - Feature development and code review
  
  
  ## Implementation Expert Guide:
