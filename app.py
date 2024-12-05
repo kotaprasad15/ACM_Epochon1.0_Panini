@@ -3,8 +3,8 @@ from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from fastapi.encoders import jsonable_encoder
-from langchain_community.llms import LlamaCpp  # Corrected import here
-from langchain.chains import RetrievalQA  # Corrected import here
+from langchain_community.llms import LlamaCpp
+from langchain.chains import RetrievalQA
 from langchain_community.embeddings import SentenceTransformerEmbeddings
 from qdrant_client import QdrantClient
 from langchain_community.vectorstores import Qdrant

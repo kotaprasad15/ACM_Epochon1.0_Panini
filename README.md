@@ -138,10 +138,10 @@ Your Medical RAG application should now be installed and ready to use!
 
     We would like to thank the following people for contributing to this project:
 
-  - [Kota Prasad](https://github.com/kotaprasad15) - Initial project setup
-  - [Sriman](https://github.com/Sriman1210) - Documentation and bug fixes
-  - [Raaghavan](https://github.com/msraaghavan) - Feature development and code review
-  - [Tanmayi](https://github.com/Madana-Tanmayi) - Feature development and code review
+  - [Kota Prasad](https://github.com/kotaprasad15) - Initial project setup.
+  - [Sriman](https://github.com/Sriman1210) - Documentation and bug fixes.
+  - [Raaghavan](https://github.com/msraaghavan) - Feature development and code review.
+  - [Tanmayi](https://github.com/Madana-Tanmayi) - Feature development and code review.
  
  
  ## Implementation Expert Guide:
